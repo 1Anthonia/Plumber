@@ -221,7 +221,8 @@ a:focus-visible {
 }
 
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -943,70 +944,54 @@ footer small {
         display: block
     }
 
-    .service-card,
-    .service-card+.service-card {
+    .service-card {
         border-right: 0;
         border-bottom: 1px solid var(--line);
-        display: inline-flex;
-        position: absolute;
-        align-items: center;
-        gap: 9px;
-        padding: 11px 13px;
-        font: 600 10px 'DM Sans';
-        letter-spacing: .2px;
-        text-decoration: none;
-        color: var(--ink);
-        background: #fff;
-        border: 1px solid var(--line);
-        box-shadow: 0 5px 12px rgba(23, 38, 42, .06);
-        transition: color .2s ease, background .2s ease, transform .2s ease, box-shadow .2s ease
+        padding: 35px 0;
+        min-height: auto;
     }
 
     .service-card:last-child {
-        color: #fff;
-        background: #2f9b61;
-        border-color: #2f9b61;
-        transform: translateY(-2px);
+        border-bottom: 0;
+    }
 
-        box-shadow: 0 8px 16px rgba(47, 155, 97, .2);
+    .approach {
+        display: block
+    }
 
-        .approach {
-            display: block
-        }
+    .approach-image {
+        min-height: 370px
+    }
 
-        .approach-image {
-            min-height: 370px
-        }
+    .approach-copy {
+        padding: 75px 6vw
+    }
 
-        .approach-copy {
-            padding: 75px 6vw
-        }
+    .contact {
+        display: block
+    }
 
-        .contact {
-            display: block
-        }
+    .contact-form {
+        margin-top: 55px;
+        grid-template-columns: 1fr;
+    }
 
-        .contact-form {
-            margin-top: 55px
-        }
+    .contact h2 {
+        font-size: clamp(3.4rem, 15vw, 5rem)
+    }
 
-        .contact h2 {
-            font-size: clamp(3.4rem, 15vw, 5rem)
-        }
+    footer {
+        display: block;
+        padding: 50px 6vw 28px
+    }
 
-        footer {
-            display: block;
-            padding: 50px 6vw 28px
-        }
+    footer p {
+        margin: 30px 0
+    }
 
-        footer p {
-            margin: 30px 0
-        }
-
-        footer small {
-            display: block;
-            margin-top: 35px
-        }
+    footer small {
+        display: block;
+        margin-top: 35px
     }
 
     .nav-links>a:not(.nav-call):not(.nav-whatsapp) {
