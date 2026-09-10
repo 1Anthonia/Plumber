@@ -947,8 +947,12 @@ footer small {
     .service-card {
         border-right: 0;
         border-bottom: 1px solid var(--line);
-        padding: 35px 0;
+        padding: 35px 30px;
         min-height: auto;
+    }
+
+    .service-card+.service-card {
+        padding-left: 30px;
     }
 
     .service-card:last-child {
